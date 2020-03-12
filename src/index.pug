@@ -1,0 +1,61 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset = 'utf-8')
+		meta(name='viewport', content="initial-scale=1.0, width=device-width")
+		meta(name="description" content="")
+		meta(name="theme-color" content="#382E2B")
+		meta(name="msapplication-navbutton-color" content="#382E2B")
+		meta(name="apple-mobile-web-app-status-bar-style" content="#382E2B")
+		link(rel="stylesheet" href="css/main.min.css")
+		title Redsoft Test
+	body.main-container
+		div.main-container__top
+			//= part/header.pug
+			main
+				.container
+					h1.h1 Картины эпохи Возрождения
+					.card__wrapper
+						.card__item(data-id = "1")
+							.card__img
+								img(src="/img/item/painting-63186_12801.jpg" alt="image")
+							.card__description
+								span.card__name «Рождение Венеры» 
+								span.card__author Сандро Боттичелли
+							.card__footer
+								.price.price_discount
+									span 2 000 000 $
+									span 1 000 000 $
+								button.button.js-btn-buy Купить
+						.card__item(data-id = "2")
+							.card__img
+								img(src="/img/item/ae973f6678e037cd297053384aa7dca01.jpg" alt="image")
+							.card__description
+								span.card__name «Тайная вечеря»
+								span.card__author Леонардо да Винчи
+							.card__footer
+								.price 3 000 000 $
+								button.button.js-btn-buy Купить
+						.card__item(data-id = "3")
+							.card__img
+								img(src="/img/item/image-191.jpg" alt="image")
+							.card__description
+								span.card__name «Сотворение Адама»
+								span.card__author Микеланджело
+							.card__footer
+								.price.price_discount
+									span 6 000 000 $
+									span 5 000 000 $
+								button.button.js-btn-buy Купить
+						.card__item.card__item_disabled(data-id = "4")
+							.card__img
+								img(src="/img/item/201523101423301.jpg" alt="image")
+							.card__description
+								span.card__name «Урок анатомии»
+								span.card__author Рембрандт
+							.card__footer
+								sapn Продана на аукционе		
+		//= part/footer.pug
+	script(src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch")
+	script(src="js/main.min.js")
+

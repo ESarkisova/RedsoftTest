@@ -1,0 +1,7 @@
+@import "../_mixins/font-face";
+
+@include font-face("MerriweatherRegular", "../fonts/MerriweatherRegular/Merriweather-Regular", 400);
+@include font-face("MerriweatherLight", "../fonts/MerriweatherLight/Merriweather-Light", 300);
+@include font-face("MerriweatherBold", "../fonts/MerriweatherBold/Merriweather-Bold", bold);
+
+
